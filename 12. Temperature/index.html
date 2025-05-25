@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temparature Coverter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Temparature Coverter</h1>
+      <p> Project 12 Temperature</p>
+      <div class="temp-container">
+        <label for="celsius">Celsius:</label>
+        <input
+        onchange="comuteTemp(event)"
+          type="number"
+          id="celsius"
+          name="celsius"
+          value="0"
+          class="input"
+          placeholder="Enter Temperature"
+        />
+      </div>
+
+      <div class="temp-container">
+        <label for="fahrenheit">Fahrenheit:</label>
+        <input
+        onchange="comuteTemp(event)"
+          type="number"
+          id="fahrenheit"
+          name="fahrenheit"
+          value="0"
+          class="input"
+          placeholder="Enter Temperature"
+        />
+      </div>
+
+      <div class="temp-container">
+        <label for="kelvin">Kelvin:</label>
+        <input
+        onchange="comuteTemp(event)"
+          type="number"
+          id="kelvin"
+          name="kelvin"
+          value="0"
+          class="input"
+          placeholder="Enter Temperature"
+        />
+      </div>
+    </div>
+  </body>
+  <script src="apps.js"></script>
+</html>

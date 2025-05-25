@@ -1,0 +1,69 @@
+body{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.password-checker{
+    background-color: azure;
+    display: block;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    margin: 20px;
+    position: relative;
+}
+.project {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+h1{
+    margin-bottom: 20px;
+    color: #333;
+}
+input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 244, 0.5);
+}
+.kekuatan-password{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 12px;
+}
+.bar{
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s ease , width 0.3s ease;
+}
+.bar.active{
+    background: #f00;
+}
+.bar.medium{
+    background: #ffb400;
+}
+.bar.strong{
+    background: #4caf50;
+}
+#feedback{
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}

@@ -1,0 +1,70 @@
+body{
+    background: linear-gradient(135deg,#4ffed2,#00f2fe);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.stopwatch-container{
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    text-align: center;
+    width: 350px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.time-display{
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+.button-group{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.btn{
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    color: #fff;
+}
+#start{
+    background: linear-gradient(135deg,#28a745,#7bed8d);
+}
+#stop{
+    background: linear-gradient(135deg,#dc3545,#ff6b81);
+
+}
+#reset{
+    background: linear-gradient(135deg,#ffc107,#ffe66d);
+}
+.btn:hover:not(:disabled){
+    transform: scale(1.05);
+    filter: brightness(0.9);
+}
+.btn:disabled{
+    background: rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.6);
+    cursor: not-allowed;
+}
+.btn:active{
+    transform: scale(0.95);
+}

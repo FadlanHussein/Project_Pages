@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    
+}
+.Calculator{
+    background-attachment: #f2f2f2;
+    padding: 20px;
+    max-width: 400px;
+    border: 1px solid;
+    margin: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-top: 40px;
+    padding: top 5px;
+}
+#result{
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-block-start: 20px;
+}
+button{
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-colos 0.3s ease;
+}
+button:hover{
+    background-color: #ddd;
+
+}
+.Clear{
+    background-color: rgb(248, 46, 46);
+    color: #fff;
+}
+.Number, .Decimal{
+    background-color: #fff;
+    color: #333;
+}
+.Operator{
+    background-color: rgb(28, 136, 136);
+    color: #fff;
+}
+.Equal{
+    background-color: #f38b15;
+    color: #fff;
+}
+
+.buttons button:nth-last-child(2){
+    grid-column: span 2;
+}
+
+h2{
+    color: #333;
+    text-align: right;
+    margin-bottom: 5px;
+}
+p{
+    color: #333;
+    text-align: left;
+    margin-bottom: 5px;
+}

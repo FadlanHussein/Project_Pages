@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f4f4f9;
+}
+.nama-container {
+    background-color: rgb(224, 91, 13);
+    color: rgb(249, 254, 255);
+    padding: 10px 20px; 
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #ddd; 
+    margin: 20px 0;
+    display: inline-block; 
+    min-width: 100px; 
+    white-space: nowrap; 
+}
+.nama-container h1 {
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+.slider{
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) ;
+}
+.slides{
+    display: flex;
+    transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+}
+
+.slide{
+min-width: 100%;
+height: auto;
+display: block;
+}
+button{
+    position: absolute;
+    top: 50%;
+/* color: #fff; */
+    transform: translateY(-50%);
+    border: none;
+    padding: 10px 20px;
+    font-size: 19px;
+   
+    z-index: 10;
+}
+
+button:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.prev{
+    left: 5px;
+}
+.next{
+    right: 5px;
+}

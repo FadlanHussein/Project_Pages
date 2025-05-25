@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <h1>Fadlan Hussein Al Utsman</h1>
+        <h4>Project 9</h4>
+      </div>
+      <div class="navbar-search">
+        <input type="text" placeholder="Search here..." />
+        <div class="toggle-theme" theme-toggle>
+          <i class="bx bx-sun light-icon" onclick="toggleTheme()"></i>
+          <i class="bx bx-moon dark-icon" onclick="toggleTheme()"></i>
+        </div>
+      </div>
+    </nav>
+    <div id="quote-container">
+      <p id="quote">Loading......</p>
+      <p id="author"></p>
+      <button onclick="fetchQuote()" >Generate New Quote</button>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
